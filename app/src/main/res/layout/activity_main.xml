@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:id="@+id/main">
+
+    <ImageView
+        android:id="@+id/MyTank"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/tank"/>
+</FrameLayout>
+    <LinearLayout
+        android:id="@+id/materials_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible">
+        <ImageView
+
+            android:layout_width="@dimen/cell_size"
+            android:layout_height="@dimen/cell_size"
+            android:layout_margin="8dp"
+           />
+        <ImageView
+
+            android:layout_width="@dimen/cell_size"
+            android:layout_height="@dimen/cell_size"
+            android:layout_margin="8dp"
+           />
+        <ImageView
+            android:id="@+id/editor_clear"
+            android:layout_width="@dimen/cell_size"
+            android:layout_height="@dimen/cell_size"
+            android:layout_margin="8dp"
+            android:src="@android:drawable/ic_delete" />
+
+        <ImageView
+            android:id="@+id/editor_brick"
+            android:layout_width="@dimen/cell_size"
+            android:layout_height="@dimen/cell_size"
+            android:layout_margin="8dp"
+            android:src="@drawable/topkirp" />
+
+        <ImageView
+            android:id="@+id/editor_concerte"
+            android:layout_width="@dimen/cell_size"
+            android:layout_height="@dimen/cell_size"
+            android:layout_margin="8dp"
+            android:src="@drawable/stena" />
+
+        <ImageView
+            android:id="@+id/editor_grass"
+            android:layout_width="@dimen/cell_size"
+            android:layout_height="@dimen/cell_size"
+            android:layout_margin="8dp"
+            android:src="@drawable/travaa" />
+    </LinearLayout>
+
+
+
+</FrameLayout>
